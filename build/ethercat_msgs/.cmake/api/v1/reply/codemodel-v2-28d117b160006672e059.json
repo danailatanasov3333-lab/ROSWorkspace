@@ -1,0 +1,267 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-c283cfe6fadd01949e96.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						15,
+						16,
+						17,
+						18,
+						19
+					]
+				},
+				{
+					"build" : "ethercat_msgs__py",
+					"jsonFile" : "directory-ethercat_msgs__py-3df726bd5683b8aaae8a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/zewy/ros2_ws/build/ethercat_msgs/ethercat_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "ethercat_msgs__rs",
+					"jsonFile" : "directory-ethercat_msgs__rs-c1eda6891f2e8cdb30c2.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/zewy/ros2_ws/build/ethercat_msgs/ethercat_msgs__rs",
+					"targetIndexes" : 
+					[
+						14
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "ethercat_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_ethercat_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_ethercat_msgs_egg-221b54b0aa354b1d9763.json",
+					"name" : "ament_cmake_python_build_ethercat_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_ethercat_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_ethercat_msgs-69dfbd622fa5eec58bdd.json",
+					"name" : "ament_cmake_python_copy_ethercat_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ethercat_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ethercat_msgs-c514701f809169633aad.json",
+					"name" : "ethercat_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ethercat_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ethercat_msgs__cpp-44df3cb9e655e73fdee5.json",
+					"name" : "ethercat_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ethercat_msgs__py::@7bc8e52237c7f42251ec",
+					"jsonFile" : "target-ethercat_msgs__py-d22d432fa9aeb56b55a7.json",
+					"name" : "ethercat_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ethercat_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ethercat_msgs__rosidl_generator_c-44e9e3f5f9698d36d3f9.json",
+					"name" : "ethercat_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ethercat_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ethercat_msgs__rosidl_generator_py-550e00bb3ad49893e93d.json",
+					"name" : "ethercat_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ethercat_msgs__rosidl_generator_type_description::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ethercat_msgs__rosidl_generator_type_description-d4599e5aad31fb25d68b.json",
+					"name" : "ethercat_msgs__rosidl_generator_type_description",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ethercat_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ethercat_msgs__rosidl_typesupport_c-0aea1fdfe0cec75d4696.json",
+					"name" : "ethercat_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ethercat_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ethercat_msgs__rosidl_typesupport_cpp-24621b0c86b4de2e7737.json",
+					"name" : "ethercat_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ethercat_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ethercat_msgs__rosidl_typesupport_fastrtps_c-ef4eeaa51c2291a82755.json",
+					"name" : "ethercat_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ethercat_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ethercat_msgs__rosidl_typesupport_fastrtps_cpp-5653a58aa105e252431b.json",
+					"name" : "ethercat_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ethercat_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ethercat_msgs__rosidl_typesupport_introspection_c-1f2f3930af886c4df620.json",
+					"name" : "ethercat_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ethercat_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ethercat_msgs__rosidl_typesupport_introspection_cpp-f7aa640fc974e8304739.json",
+					"name" : "ethercat_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ethercat_msgs__rs::@7a751b3a000c59ccb6f3",
+					"jsonFile" : "target-ethercat_msgs__rs-981be6bd2888c557f3ad.json",
+					"name" : "ethercat_msgs__rs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ethercat_msgs_s__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ethercat_msgs_s__rosidl_typesupport_c-98c3a8579461390d38f1.json",
+					"name" : "ethercat_msgs_s__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ethercat_msgs_s__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ethercat_msgs_s__rosidl_typesupport_fastrtps_c-7cce02d44049c92a23f6.json",
+					"name" : "ethercat_msgs_s__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ethercat_msgs_s__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ethercat_msgs_s__rosidl_typesupport_introspection_c-6800e02b66ffce0fd94b.json",
+					"name" : "ethercat_msgs_s__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ethercat_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ethercat_msgs_uninstall-63dcfd0fd9c540696eac.json",
+					"name" : "ethercat_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-2e87cc8507552d2c7292.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/zewy/ros2_ws/build/ethercat_msgs",
+		"source" : "/home/zewy/ros2_ws/src/ethercat_driver_ros2/ethercat_driver_ros2/ethercat_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

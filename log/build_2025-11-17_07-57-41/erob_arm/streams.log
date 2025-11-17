@@ -1,0 +1,19 @@
+[1.345s] Invoking command in '/home/zewy/ros2_ws/eRob_moveit/src/eRob_ROS2_MoveIt/erob_arm': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/zewy/ros2_ws/build/erob_arm/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zewy/ros2_ws/install/erob_arm/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/erob_arm build --build-base /home/zewy/ros2_ws/build/erob_arm/build install --record /home/zewy/ros2_ws/build/erob_arm/install.log --single-version-externally-managed install_data
+[1.675s] running egg_info
+[1.704s] writing ../../../../build/erob_arm/erob_arm.egg-info/PKG-INFO
+[1.705s] writing dependency_links to ../../../../build/erob_arm/erob_arm.egg-info/dependency_links.txt
+[1.705s] writing requirements to ../../../../build/erob_arm/erob_arm.egg-info/requires.txt
+[1.706s] writing top-level names to ../../../../build/erob_arm/erob_arm.egg-info/top_level.txt
+[1.763s] reading manifest file '../../../../build/erob_arm/erob_arm.egg-info/SOURCES.txt'
+[1.764s] writing manifest file '../../../../build/erob_arm/erob_arm.egg-info/SOURCES.txt'
+[1.764s] running build
+[1.764s] running build_py
+[1.765s] running install
+[1.770s] running install_lib
+[1.799s] running install_data
+[1.801s] running install_egg_info
+[1.830s] removing '/home/zewy/ros2_ws/install/erob_arm/lib/python3.12/site-packages/erob_arm-0.0.0-py3.12.egg-info' (and everything under it)
+[1.831s] Copying ../../../../build/erob_arm/erob_arm.egg-info to /home/zewy/ros2_ws/install/erob_arm/lib/python3.12/site-packages/erob_arm-0.0.0-py3.12.egg-info
+[1.832s] running install_scripts
+[2.007s] writing list of installed files to '/home/zewy/ros2_ws/build/erob_arm/install.log'
+[2.032s] Invoked command in '/home/zewy/ros2_ws/eRob_moveit/src/eRob_ROS2_MoveIt/erob_arm' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/zewy/ros2_ws/build/erob_arm/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zewy/ros2_ws/install/erob_arm/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/erob_arm build --build-base /home/zewy/ros2_ws/build/erob_arm/build install --record /home/zewy/ros2_ws/build/erob_arm/install.log --single-version-externally-managed install_data

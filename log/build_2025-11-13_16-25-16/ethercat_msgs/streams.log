@@ -1,0 +1,275 @@
+[0.320s] Invoking command in '/home/zewy/ros2_ws/build/ethercat_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zewy/ws_moveit2/install/moveit_configs_utils:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/zewy/ros2_ws/src/ethercat_driver_ros2/ethercat_driver_ros2/ethercat_msgs -DCMAKE_INSTALL_PREFIX=/home/zewy/ros2_ws/install/ethercat_msgs
+[0.410s] -- The C compiler identification is GNU 13.3.0
+[0.484s] -- The CXX compiler identification is GNU 13.3.0
+[0.515s] -- Detecting C compiler ABI info
+[0.753s] -- Detecting C compiler ABI info - done
+[0.767s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.768s] -- Detecting C compile features
+[0.768s] -- Detecting C compile features - done
+[0.788s] -- Detecting CXX compiler ABI info
+[0.998s] -- Detecting CXX compiler ABI info - done
+[1.015s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.016s] -- Detecting CXX compile features
+[1.016s] -- Detecting CXX compile features - done
+[1.039s] -- Found ament_cmake: 2.8.4 (/opt/ros/rolling/share/ament_cmake/cmake)
+[1.534s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[2.068s] -- Found rosidl_default_generators: 1.8.1 (/opt/ros/rolling/share/rosidl_default_generators/cmake)
+[2.147s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.403s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.614s] -- Found rosidl_adapter: 5.1.0 (/opt/ros/rolling/share/rosidl_adapter/cmake)
+[3.496s] -- Found ament_cmake_ros_core: 0.15.2 (/opt/ros/rolling/share/ament_cmake_ros_core/cmake)
+[4.198s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.145s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.806s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[5.879s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[5.894s] -- Found ament_lint_auto: 0.20.2 (/opt/ros/rolling/share/ament_lint_auto/cmake)
+[5.902s] -- Configuring done (5.6s)
+[5.946s] -- Generating done (0.0s)
+[5.960s] -- Build files have been written to: /home/zewy/ros2_ws/build/ethercat_msgs
+[5.970s] Invoked command in '/home/zewy/ros2_ws/build/ethercat_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zewy/ws_moveit2/install/moveit_configs_utils:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/zewy/ros2_ws/src/ethercat_driver_ros2/ethercat_driver_ros2/ethercat_msgs -DCMAKE_INSTALL_PREFIX=/home/zewy/ros2_ws/install/ethercat_msgs
+[5.972s] Invoking command in '/home/zewy/ros2_ws/build/ethercat_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zewy/ws_moveit2/install/moveit_configs_utils:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/zewy/ros2_ws/build/ethercat_msgs -- -j12 -l12
+[6.096s] [  4%] [34m[1mGenerating Rust code for ROS interfaces[0m
+[6.096s] [  4%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[6.118s] [  4%] Built target ament_cmake_python_copy_ethercat_msgs
+[6.406s] [  4%] Built target ethercat_msgs__rosidl_generator_type_description
+[6.433s] [  6%] [34m[1mGenerating C code for ROS interfaces[0m
+[6.433s] [  6%] Built target ethercat_msgs__rs
+[6.459s] [  8%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[6.525s] running egg_info
+[6.527s] creating ethercat_msgs.egg-info
+[6.572s] writing ethercat_msgs.egg-info/PKG-INFO
+[6.572s] writing dependency_links to ethercat_msgs.egg-info/dependency_links.txt
+[6.572s] writing top-level names to ethercat_msgs.egg-info/top_level.txt
+[6.573s] writing manifest file 'ethercat_msgs.egg-info/SOURCES.txt'
+[6.710s] reading manifest file 'ethercat_msgs.egg-info/SOURCES.txt'
+[6.711s] writing manifest file 'ethercat_msgs.egg-info/SOURCES.txt'
+[6.766s] [  8%] Built target ament_cmake_python_build_ethercat_msgs_egg
+[6.993s] [  8%] Built target ethercat_msgs__cpp
+[7.054s] [ 13%] [32mBuilding C object CMakeFiles/ethercat_msgs__rosidl_generator_c.dir/rosidl_generator_c/ethercat_msgs/srv/detail/set_sdo__type_support.c.o[0m
+[7.054s] [ 13%] [32mBuilding C object CMakeFiles/ethercat_msgs__rosidl_generator_c.dir/rosidl_generator_c/ethercat_msgs/srv/detail/set_sdo__functions.c.o[0m
+[7.054s] [ 15%] [32mBuilding C object CMakeFiles/ethercat_msgs__rosidl_generator_c.dir/rosidl_generator_c/ethercat_msgs/srv/detail/get_sdo__functions.c.o[0m
+[7.054s] [ 17%] [32mBuilding C object CMakeFiles/ethercat_msgs__rosidl_generator_c.dir/rosidl_generator_c/ethercat_msgs/srv/detail/get_sdo__type_support.c.o[0m
+[7.055s] [ 20%] [32mBuilding C object CMakeFiles/ethercat_msgs__rosidl_generator_c.dir/rosidl_generator_c/ethercat_msgs/srv/detail/set_sdo__description.c.o[0m
+[7.055s] [ 22%] [32mBuilding C object CMakeFiles/ethercat_msgs__rosidl_generator_c.dir/rosidl_generator_c/ethercat_msgs/srv/detail/get_sdo__description.c.o[0m
+[7.167s] [ 24%] [32m[1mLinking C shared library libethercat_msgs__rosidl_generator_c.so[0m
+[7.237s] [ 24%] Built target ethercat_msgs__rosidl_generator_c
+[7.262s] [ 28%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[7.262s] [ 28%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[7.262s] [ 31%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[7.262s] [ 33%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[7.263s] [ 37%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[7.263s] [ 37%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[7.691s] [ 40%] [32mBuilding CXX object CMakeFiles/ethercat_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ethercat_msgs/srv/get_sdo__type_support.cpp.o[0m
+[7.693s] [ 42%] [32mBuilding CXX object CMakeFiles/ethercat_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ethercat_msgs/srv/set_sdo__type_support.cpp.o[0m
+[7.748s] [ 44%] [32mBuilding CXX object CMakeFiles/ethercat_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ethercat_msgs/srv/detail/set_sdo__type_support.cpp.o[0m
+[7.753s] [ 46%] [32mBuilding CXX object CMakeFiles/ethercat_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ethercat_msgs/srv/detail/get_sdo__type_support.cpp.o[0m
+[7.767s] [ 48%] [32mBuilding C object CMakeFiles/ethercat_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ethercat_msgs/srv/detail/set_sdo__type_support.c.o[0m
+[7.767s] [ 51%] [32mBuilding C object CMakeFiles/ethercat_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ethercat_msgs/srv/detail/get_sdo__type_support.c.o[0m
+[7.800s] [ 53%] [32m[1mLinking CXX shared library libethercat_msgs__rosidl_typesupport_c.so[0m
+[7.890s] [ 55%] [32m[1mLinking C shared library libethercat_msgs__rosidl_typesupport_introspection_c.so[0m
+[7.906s] [ 60%] [32mBuilding CXX object CMakeFiles/ethercat_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ethercat_msgs/srv/set_sdo__type_support.cpp.o[0m
+[7.906s] [ 60%] [32mBuilding CXX object CMakeFiles/ethercat_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ethercat_msgs/srv/get_sdo__type_support.cpp.o[0m
+[7.931s] [ 60%] Built target ethercat_msgs__rosidl_typesupport_c
+[7.969s] [ 64%] [32mBuilding CXX object CMakeFiles/ethercat_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ethercat_msgs/srv/detail/get_sdo__type_support_c.cpp.o[0m
+[7.969s] [ 64%] [32mBuilding CXX object CMakeFiles/ethercat_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ethercat_msgs/srv/detail/set_sdo__type_support_c.cpp.o[0m
+[8.001s] [ 64%] Built target ethercat_msgs__rosidl_typesupport_introspection_c
+[8.132s] [ 66%] [32mBuilding CXX object CMakeFiles/ethercat_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ethercat_msgs/srv/detail/dds_fastrtps/set_sdo__type_support.cpp.o[0m
+[8.135s] [ 68%] [32mBuilding CXX object CMakeFiles/ethercat_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ethercat_msgs/srv/detail/dds_fastrtps/get_sdo__type_support.cpp.o[0m
+[8.493s] [ 71%] [32m[1mLinking CXX shared library libethercat_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[8.615s] [ 73%] [32m[1mLinking CXX shared library libethercat_msgs__rosidl_typesupport_cpp.so[0m
+[8.674s] [ 73%] Built target ethercat_msgs__rosidl_typesupport_introspection_cpp
+[8.830s] [ 73%] Built target ethercat_msgs__rosidl_typesupport_cpp
+[8.862s] [ 75%] [32m[1mLinking CXX shared library libethercat_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[8.988s] [ 75%] Built target ethercat_msgs__rosidl_typesupport_fastrtps_c
+[9.103s] [ 77%] [32m[1mLinking CXX shared library libethercat_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[9.223s] [ 77%] Built target ethercat_msgs__rosidl_typesupport_fastrtps_cpp
+[9.269s] [ 77%] Built target ethercat_msgs
+[9.312s] [ 80%] [34m[1mGenerating Python code for ROS interfaces[0m
+[9.964s] [ 80%] Built target ethercat_msgs__py
+[10.015s] [ 84%] [32mBuilding C object CMakeFiles/ethercat_msgs__rosidl_generator_py.dir/rosidl_generator_py/ethercat_msgs/srv/_set_sdo_s.c.o[0m
+[10.015s] [ 84%] [32mBuilding C object CMakeFiles/ethercat_msgs__rosidl_generator_py.dir/rosidl_generator_py/ethercat_msgs/srv/_get_sdo_s.c.o[0m
+[10.235s] [ 86%] [32m[1mLinking C shared library libethercat_msgs__rosidl_generator_py.so[0m
+[10.310s] [ 86%] Built target ethercat_msgs__rosidl_generator_py
+[10.358s] [ 91%] [32mBuilding C object CMakeFiles/ethercat_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/ethercat_msgs/_ethercat_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[10.359s] [ 91%] [32mBuilding C object CMakeFiles/ethercat_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/ethercat_msgs/_ethercat_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[10.359s] [ 93%] [32mBuilding C object CMakeFiles/ethercat_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/ethercat_msgs/_ethercat_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[10.524s] [ 97%] [32m[1mLinking C shared module rosidl_generator_py/ethercat_msgs/ethercat_msgs_s__rosidl_typesupport_introspection_c.so[0m
+[10.525s] [ 97%] [32m[1mLinking C shared module rosidl_generator_py/ethercat_msgs/ethercat_msgs_s__rosidl_typesupport_c.so[0m
+[10.530s] [100%] [32m[1mLinking C shared module rosidl_generator_py/ethercat_msgs/ethercat_msgs_s__rosidl_typesupport_fastrtps_c.so[0m
+[10.596s] [100%] Built target ethercat_msgs_s__rosidl_typesupport_c
+[10.598s] [100%] Built target ethercat_msgs_s__rosidl_typesupport_introspection_c
+[10.607s] [100%] Built target ethercat_msgs_s__rosidl_typesupport_fastrtps_c
+[10.635s] Invoked command in '/home/zewy/ros2_ws/build/ethercat_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zewy/ws_moveit2/install/moveit_configs_utils:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/zewy/ros2_ws/build/ethercat_msgs -- -j12 -l12
+[10.637s] Invoking command in '/home/zewy/ros2_ws/build/ethercat_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zewy/ws_moveit2/install/moveit_configs_utils:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/zewy/ros2_ws/build/ethercat_msgs
+[10.658s] -- Install configuration: ""
+[10.658s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ament_index/resource_index/rosidl_interfaces/ethercat_msgs
+[10.658s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/srv/SetSdo.json
+[10.659s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/srv/GetSdo.json
+[10.659s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs
+[10.659s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/msg
+[10.659s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/msg/rosidl_generator_c__visibility_control.h
+[10.660s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/srv
+[10.660s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/srv/set_sdo.h
+[10.660s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/srv/get_sdo.h
+[10.660s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/srv/detail
+[10.661s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/srv/detail/set_sdo__description.c
+[10.661s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/srv/detail/get_sdo__type_support.h
+[10.661s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/srv/detail/get_sdo__functions.c
+[10.662s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/srv/detail/get_sdo__description.c
+[10.662s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/srv/detail/set_sdo__type_support.h
+[10.662s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/srv/detail/set_sdo__struct.h
+[10.662s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/srv/detail/set_sdo__functions.c
+[10.663s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/srv/detail/get_sdo__type_support.c
+[10.663s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/srv/detail/get_sdo__struct.h
+[10.663s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/srv/detail/set_sdo__functions.h
+[10.663s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/srv/detail/get_sdo__functions.h
+[10.663s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/srv/detail/set_sdo__type_support.c
+[10.663s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/environment/library_path.sh
+[10.664s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/environment/library_path.dsv
+[10.664s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/lib/libethercat_msgs__rosidl_generator_c.so
+[10.664s] -- Set non-toolchain portion of runtime path of "/home/zewy/ros2_ws/install/ethercat_msgs/lib/libethercat_msgs__rosidl_generator_c.so" to ""
+[10.665s] -- Up-to-date: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs
+[10.665s] -- Up-to-date: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/msg
+[10.665s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[10.665s] -- Up-to-date: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/srv
+[10.665s] -- Up-to-date: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/srv/detail
+[10.665s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/srv/detail/set_sdo__rosidl_typesupport_fastrtps_c.h
+[10.665s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/srv/detail/get_sdo__rosidl_typesupport_fastrtps_c.h
+[10.666s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/lib/libethercat_msgs__rosidl_typesupport_fastrtps_c.so
+[10.666s] -- Set non-toolchain portion of runtime path of "/home/zewy/ros2_ws/install/ethercat_msgs/lib/libethercat_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[10.666s] -- Up-to-date: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs
+[10.667s] -- Up-to-date: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/msg
+[10.667s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[10.667s] -- Up-to-date: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/srv
+[10.667s] -- Up-to-date: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/srv/detail
+[10.668s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/srv/detail/set_sdo__rosidl_typesupport_introspection_c.h
+[10.668s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/srv/detail/get_sdo__type_support.c
+[10.669s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/srv/detail/get_sdo__rosidl_typesupport_introspection_c.h
+[10.669s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/srv/detail/set_sdo__type_support.c
+[10.669s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/lib/libethercat_msgs__rosidl_typesupport_introspection_c.so
+[10.669s] -- Set non-toolchain portion of runtime path of "/home/zewy/ros2_ws/install/ethercat_msgs/lib/libethercat_msgs__rosidl_typesupport_introspection_c.so" to ""
+[10.670s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/lib/libethercat_msgs__rosidl_typesupport_c.so
+[10.670s] -- Set non-toolchain portion of runtime path of "/home/zewy/ros2_ws/install/ethercat_msgs/lib/libethercat_msgs__rosidl_typesupport_c.so" to ""
+[10.670s] -- Up-to-date: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs
+[10.670s] -- Up-to-date: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/msg
+[10.670s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[10.670s] -- Up-to-date: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/srv
+[10.671s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/srv/get_sdo.hpp
+[10.671s] -- Up-to-date: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/srv/detail
+[10.672s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/srv/detail/set_sdo__struct.hpp
+[10.672s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/srv/detail/get_sdo__traits.hpp
+[10.672s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/srv/detail/get_sdo__type_support.hpp
+[10.672s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/srv/detail/set_sdo__type_support.hpp
+[10.672s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/srv/detail/get_sdo__struct.hpp
+[10.672s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/srv/detail/get_sdo__builder.hpp
+[10.673s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/srv/detail/set_sdo__builder.hpp
+[10.673s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/srv/detail/set_sdo__traits.hpp
+[10.673s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/srv/set_sdo.hpp
+[10.673s] -- Up-to-date: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs
+[10.673s] -- Up-to-date: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/msg
+[10.673s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[10.674s] -- Up-to-date: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/srv
+[10.674s] -- Up-to-date: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/srv/detail
+[10.674s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/srv/detail/get_sdo__rosidl_typesupport_fastrtps_cpp.hpp
+[10.674s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/srv/detail/dds_fastrtps
+[10.675s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/srv/detail/set_sdo__rosidl_typesupport_fastrtps_cpp.hpp
+[10.675s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/lib/libethercat_msgs__rosidl_typesupport_fastrtps_cpp.so
+[10.675s] -- Set non-toolchain portion of runtime path of "/home/zewy/ros2_ws/install/ethercat_msgs/lib/libethercat_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[10.675s] -- Up-to-date: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs
+[10.675s] -- Up-to-date: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/srv
+[10.676s] -- Up-to-date: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/srv/detail
+[10.676s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/srv/detail/set_sdo__type_support.cpp
+[10.676s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/srv/detail/get_sdo__rosidl_typesupport_introspection_cpp.hpp
+[10.676s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/srv/detail/set_sdo__rosidl_typesupport_introspection_cpp.hpp
+[10.676s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/include/ethercat_msgs/ethercat_msgs/srv/detail/get_sdo__type_support.cpp
+[10.677s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/lib/libethercat_msgs__rosidl_typesupport_introspection_cpp.so
+[10.677s] -- Set non-toolchain portion of runtime path of "/home/zewy/ros2_ws/install/ethercat_msgs/lib/libethercat_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[10.677s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/lib/libethercat_msgs__rosidl_typesupport_cpp.so
+[10.678s] -- Set non-toolchain portion of runtime path of "/home/zewy/ros2_ws/install/ethercat_msgs/lib/libethercat_msgs__rosidl_typesupport_cpp.so" to ""
+[10.678s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/environment/pythonpath.sh
+[10.679s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/environment/pythonpath.dsv
+[10.679s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/lib/python3.12/site-packages/ethercat_msgs-1.2.0-py3.12.egg-info
+[10.679s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/lib/python3.12/site-packages/ethercat_msgs-1.2.0-py3.12.egg-info/dependency_links.txt
+[10.679s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/lib/python3.12/site-packages/ethercat_msgs-1.2.0-py3.12.egg-info/top_level.txt
+[10.680s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/lib/python3.12/site-packages/ethercat_msgs-1.2.0-py3.12.egg-info/SOURCES.txt
+[10.680s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/lib/python3.12/site-packages/ethercat_msgs-1.2.0-py3.12.egg-info/PKG-INFO
+[10.680s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/lib/python3.12/site-packages/ethercat_msgs
+[10.680s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/lib/python3.12/site-packages/ethercat_msgs/_ethercat_msgs_s.ep.rosidl_typesupport_c.c
+[10.680s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/lib/python3.12/site-packages/ethercat_msgs/_ethercat_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[10.681s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/lib/python3.12/site-packages/ethercat_msgs/__init__.py
+[10.681s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/lib/python3.12/site-packages/ethercat_msgs/srv
+[10.681s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/lib/python3.12/site-packages/ethercat_msgs/srv/__init__.py
+[10.681s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/lib/python3.12/site-packages/ethercat_msgs/srv/_set_sdo_s.c
+[10.681s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/lib/python3.12/site-packages/ethercat_msgs/srv/_get_sdo.py
+[10.681s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/lib/python3.12/site-packages/ethercat_msgs/srv/_set_sdo.py
+[10.682s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/lib/python3.12/site-packages/ethercat_msgs/srv/_get_sdo_s.c
+[10.682s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/lib/python3.12/site-packages/ethercat_msgs/ethercat_msgs_s__rosidl_typesupport_c.so
+[10.682s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/lib/python3.12/site-packages/ethercat_msgs/ethercat_msgs_s__rosidl_typesupport_introspection_c.so
+[10.682s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/lib/python3.12/site-packages/ethercat_msgs/ethercat_msgs_s__rosidl_typesupport_fastrtps_c.so
+[10.682s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/lib/python3.12/site-packages/ethercat_msgs/py.typed
+[10.682s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/lib/python3.12/site-packages/ethercat_msgs/_ethercat_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[10.745s] Listing '/home/zewy/ros2_ws/install/ethercat_msgs/lib/python3.12/site-packages/ethercat_msgs'...
+[10.745s] Compiling '/home/zewy/ros2_ws/install/ethercat_msgs/lib/python3.12/site-packages/ethercat_msgs/__init__.py'...
+[10.745s] Listing '/home/zewy/ros2_ws/install/ethercat_msgs/lib/python3.12/site-packages/ethercat_msgs/srv'...
+[10.745s] Compiling '/home/zewy/ros2_ws/install/ethercat_msgs/lib/python3.12/site-packages/ethercat_msgs/srv/__init__.py'...
+[10.745s] Compiling '/home/zewy/ros2_ws/install/ethercat_msgs/lib/python3.12/site-packages/ethercat_msgs/srv/_get_sdo.py'...
+[10.745s] Compiling '/home/zewy/ros2_ws/install/ethercat_msgs/lib/python3.12/site-packages/ethercat_msgs/srv/_set_sdo.py'...
+[10.751s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/lib/python3.12/site-packages/ethercat_msgs/ethercat_msgs_s__rosidl_typesupport_fastrtps_c.so
+[10.752s] -- Set non-toolchain portion of runtime path of "/home/zewy/ros2_ws/install/ethercat_msgs/lib/python3.12/site-packages/ethercat_msgs/ethercat_msgs_s__rosidl_typesupport_fastrtps_c.so" to ""
+[10.752s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/lib/python3.12/site-packages/ethercat_msgs/ethercat_msgs_s__rosidl_typesupport_introspection_c.so
+[10.753s] -- Set non-toolchain portion of runtime path of "/home/zewy/ros2_ws/install/ethercat_msgs/lib/python3.12/site-packages/ethercat_msgs/ethercat_msgs_s__rosidl_typesupport_introspection_c.so" to ""
+[10.753s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/lib/python3.12/site-packages/ethercat_msgs/ethercat_msgs_s__rosidl_typesupport_c.so
+[10.754s] -- Set non-toolchain portion of runtime path of "/home/zewy/ros2_ws/install/ethercat_msgs/lib/python3.12/site-packages/ethercat_msgs/ethercat_msgs_s__rosidl_typesupport_c.so" to ""
+[10.754s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/lib/libethercat_msgs__rosidl_generator_py.so
+[10.755s] -- Set non-toolchain portion of runtime path of "/home/zewy/ros2_ws/install/ethercat_msgs/lib/libethercat_msgs__rosidl_generator_py.so" to ""
+[10.755s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ament_index/resource_index/rust_packages/ethercat_msgs
+[10.755s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/rust
+[10.755s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/rust/build.rs
+[10.756s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/rust/Cargo.toml
+[10.756s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/rust/src
+[10.756s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/rust/src/lib.rs
+[10.756s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/rust/src/srv.rs
+[10.756s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/srv/SetSdo.idl
+[10.756s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/srv/GetSdo.idl
+[10.757s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/srv/SetSdo.srv
+[10.757s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/srv/GetSdo.srv
+[10.757s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ament_index/resource_index/package_run_dependencies/ethercat_msgs
+[10.757s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ament_index/resource_index/parent_prefix_path/ethercat_msgs
+[10.758s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/environment/ament_prefix_path.sh
+[10.758s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/environment/ament_prefix_path.dsv
+[10.758s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/environment/path.sh
+[10.758s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/environment/path.dsv
+[10.758s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/local_setup.bash
+[10.759s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/local_setup.sh
+[10.759s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/local_setup.zsh
+[10.759s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/local_setup.dsv
+[10.759s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/package.dsv
+[10.760s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ament_index/resource_index/packages/ethercat_msgs
+[10.760s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/cmake/export_ethercat_msgs__rosidl_generator_cExport.cmake
+[10.760s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/cmake/export_ethercat_msgs__rosidl_generator_cExport-noconfig.cmake
+[10.760s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/cmake/export_ethercat_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[10.760s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/cmake/export_ethercat_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[10.761s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/cmake/ethercat_msgs__rosidl_typesupport_introspection_cExport.cmake
+[10.761s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/cmake/ethercat_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[10.761s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/cmake/ethercat_msgs__rosidl_typesupport_cExport.cmake
+[10.761s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/cmake/ethercat_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[10.762s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/cmake/export_ethercat_msgs__rosidl_generator_cppExport.cmake
+[10.762s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/cmake/export_ethercat_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[10.762s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/cmake/export_ethercat_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[10.762s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/cmake/ethercat_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[10.762s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/cmake/ethercat_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[10.763s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/cmake/ethercat_msgs__rosidl_typesupport_cppExport.cmake
+[10.763s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/cmake/ethercat_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[10.763s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/cmake/export_ethercat_msgs__rosidl_generator_pyExport.cmake
+[10.763s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/cmake/export_ethercat_msgs__rosidl_generator_pyExport-noconfig.cmake
+[10.763s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/cmake/rosidl_cmake-extras.cmake
+[10.764s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[10.764s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[10.764s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[10.764s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[10.764s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[10.765s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[10.765s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/cmake/ethercat_msgsConfig.cmake
+[10.765s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/cmake/ethercat_msgsConfig-version.cmake
+[10.765s] -- Installing: /home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/package.xml
+[10.769s] Invoked command in '/home/zewy/ros2_ws/build/ethercat_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zewy/ws_moveit2/install/moveit_configs_utils:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/zewy/ros2_ws/build/ethercat_msgs

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This does not replace URDF, and is not an extension of URDF.
+    This is a format for representing semantic information about the robot structure.
+    A URDF file must exist for this robot as well, where the joints and the links that are referenced are defined
+-->
+<robot name="eRobo3">
+    <!--GROUPS: Representation of a set of joints and links. This can be useful for specifying DOF to plan for, defining arms, end effectors, etc-->
+    <!--LINKS: When a link is specified, the parent joint of that link (if it exists) is automatically included-->
+    <!--JOINTS: When a joint is specified, the child link of that joint (which will always exist) is automatically included-->
+    <!--CHAINS: When a chain is specified, all the links along the chain (including endpoints) are included in the group. Additionally, all the joints that are parents to included links are also included. This means that joints along the chain and the parent joint of the base link are included in the group-->
+    <!--SUBGROUPS: Groups can also be formed by referencing to already defined group names-->
+    <group name="manipulator">
+        <joint name="virtual_joint"/>
+        <joint name="Joint_1"/>
+        <joint name="Joint_2"/>
+        <joint name="Joint_3"/>
+        <joint name="Joint_4"/>
+        <joint name="Joint_5"/>
+        <joint name="Joint_6"/>
+    </group>
+    <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
+    <group name="tool0_group">
+        <link name="tool0"/>
+    </group>
+    <group_state name="home" group="manipulator">
+        <joint name="Joint_1" value="-1.57"/>
+        <joint name="Joint_2" value="-0.35"/>
+        <joint name="Joint_3" value="-0.7"/>
+        <joint name="Joint_4" value="-0.52"/>
+        <joint name="Joint_5" value="-1.57"/>
+        <joint name="Joint_6" value="0"/>
+    </group_state>
+    <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
+    <virtual_joint name="virtual_joint" type="fixed" parent_frame="world" child_link="base_link"/>
+    <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
+    <end_effector name="tool0" parent_link="Link_6" group="tool0_group"/>
+    <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
+    <!-- With expanded joint limits (J2: ±180°, J3: ±180°, J4: -280° to +180°), many links can now collide -->
+    <!-- ONLY disable collision checking for: 1) Adjacent links, 2) Links that are ALWAYS geometrically impossible to collide -->
+
+    <!-- Adjacent links - always disabled (connected by joint) -->
+    <disable_collisions link1="Link_1" link2="Link_2" reason="Adjacent"/>
+    <disable_collisions link1="Link_1" link2="base_link" reason="Adjacent"/>
+    <disable_collisions link1="Link_1" link2="base_link_inertial" reason="Adjacent"/>
+    <disable_collisions link1="Link_2" link2="Link_3" reason="Adjacent"/>
+    <disable_collisions link1="Link_3" link2="Link_4" reason="Adjacent"/>
+    <disable_collisions link1="Link_4" link2="Link_5" reason="Adjacent"/>
+    <disable_collisions link1="Link_5" link2="Link_6" reason="Adjacent"/>
+    <disable_collisions link1="Link_6" link2="tool0" reason="Adjacent"/>
+
+    <!-- Only disable for links that are truly unreachable by geometry -->
+    <!-- Link_1 is too short to reach upper arm links even at extreme angles -->
+    <disable_collisions link1="Link_1" link2="Link_3" reason="Never"/>
+    <disable_collisions link1="Link_1" link2="Link_4" reason="Never"/>
+    <disable_collisions link1="Link_1" link2="Link_5" reason="Never"/>
+
+    <!-- Link_2 and Link_4 are separated by Link_3's length -->
+    <disable_collisions link1="Link_2" link2="Link_4" reason="Never"/>
+    <disable_collisions link1="Link_2" link2="Link_5" reason="Never"/>
+
+    <!-- Link_3 and Link_5 are separated by Link_4 -->
+    <disable_collisions link1="Link_3" link2="Link_5" reason="Never"/>
+
+    <!-- Wrist links are far from base -->
+    <disable_collisions link1="Link_5" link2="base_link" reason="Never"/>
+    <disable_collisions link1="Link_5" link2="base_link_inertial" reason="Never"/>
+
+    <!-- Tool is far from early links -->
+    <disable_collisions link1="tool0" link2="Link_3" reason="Never"/>
+    <disable_collisions link1="tool0" link2="Link_4" reason="Never"/>
+    <disable_collisions link1="tool0" link2="Link_5" reason="Never"/>
+
+    <!-- TABLE collision checking -->
+    <!-- Disable collisions with table for links that can never reach it (upper arm and wrist) -->
+    <disable_collisions link1="table" link2="base_link" reason="Adjacent"/>
+    <disable_collisions link1="table" link2="base_link_inertial" reason="Adjacent"/>
+    <disable_collisions link1="table" link2="Link_1" reason="Never"/>
+    <disable_collisions link1="table" link2="Link_4" reason="Never"/>
+    <disable_collisions link1="table" link2="Link_5" reason="Never"/>
+    <disable_collisions link1="table" link2="Link_6" reason="Never"/>
+    <disable_collisions link1="table" link2="tool0" reason="Never"/>
+    <!-- ENABLED collision checking: table vs Link_2, Link_3 (can reach table with expanded J2/J3) -->
+
+    <!-- COLLISION CHECKING NOW ENABLED (removed from disabled list): -->
+    <!-- - Link_1 vs Link_6: CAN collide with expanded J2/J4 limits -->
+    <!-- - Link_2 vs Link_6: CAN collide with folded configurations -->
+    <!-- - Link_2 vs base: CAN collide when J2 goes below -140° -->
+    <!-- - Link_3 vs Link_6: CAN collide with extreme J4 angles -->
+    <!-- - Link_3 vs base: CAN collide with low J2 + J3 combinations -->
+    <!-- - Link_4 vs Link_6: CAN collide with extreme wrist folds -->
+    <!-- - Link_4 vs base: CAN collide with extreme J2/J3/J4 combinations -->
+    <!-- - Link_6 vs base: CAN collide with tool pointing down at low positions -->
+    <!-- - tool0 vs base: CAN collide when tool points toward base -->
+    <!-- - tool0 vs Link_1: CAN collide with extreme wrist configurations -->
+    <!-- - tool0 vs Link_2: CAN collide when folded back -->
+</robot>

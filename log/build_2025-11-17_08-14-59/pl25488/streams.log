@@ -1,0 +1,50 @@
+[0.023s] Invoking command in '/home/zewy/ros2_ws/build/pl25488': AMENT_PREFIX_PATH=/home/zewy/ros2_ws/install/erob_arm:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zewy/ws_moveit2/install/moveit_configs_utils:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/zewy/ros2_ws/install/erob_arm/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zewy/ros2_ws/build/pl25488 -- -j12 -l12
+[0.111s] Invoked command in '/home/zewy/ros2_ws/build/pl25488' returned '0': AMENT_PREFIX_PATH=/home/zewy/ros2_ws/install/erob_arm:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zewy/ws_moveit2/install/moveit_configs_utils:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/zewy/ros2_ws/install/erob_arm/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/zewy/ros2_ws/build/pl25488 -- -j12 -l12
+[0.113s] Invoking command in '/home/zewy/ros2_ws/build/pl25488': AMENT_PREFIX_PATH=/home/zewy/ros2_ws/install/erob_arm:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zewy/ws_moveit2/install/moveit_configs_utils:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/zewy/ros2_ws/install/erob_arm/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/zewy/ros2_ws/build/pl25488
+[0.130s] -- Install configuration: ""
+[0.130s] -- Up-to-date: /home/zewy/ros2_ws/install/pl25488/lib/pl25488/gui_bridge.py
+[0.130s] -- Up-to-date: /home/zewy/ros2_ws/install/pl25488/lib/pl25488/cartesian_gui.py
+[0.130s] -- Up-to-date: /home/zewy/ros2_ws/install/pl25488/share/ament_index/resource_index/package_run_dependencies/pl25488
+[0.130s] -- Up-to-date: /home/zewy/ros2_ws/install/pl25488/share/ament_index/resource_index/parent_prefix_path/pl25488
+[0.130s] -- Up-to-date: /home/zewy/ros2_ws/install/pl25488/share/pl25488/environment/ament_prefix_path.sh
+[0.130s] -- Up-to-date: /home/zewy/ros2_ws/install/pl25488/share/pl25488/environment/ament_prefix_path.dsv
+[0.131s] -- Up-to-date: /home/zewy/ros2_ws/install/pl25488/share/pl25488/environment/path.sh
+[0.131s] -- Up-to-date: /home/zewy/ros2_ws/install/pl25488/share/pl25488/environment/path.dsv
+[0.131s] -- Up-to-date: /home/zewy/ros2_ws/install/pl25488/share/pl25488/local_setup.bash
+[0.131s] -- Up-to-date: /home/zewy/ros2_ws/install/pl25488/share/pl25488/local_setup.sh
+[0.131s] -- Up-to-date: /home/zewy/ros2_ws/install/pl25488/share/pl25488/local_setup.zsh
+[0.131s] -- Up-to-date: /home/zewy/ros2_ws/install/pl25488/share/pl25488/local_setup.dsv
+[0.131s] -- Installing: /home/zewy/ros2_ws/install/pl25488/share/pl25488/package.dsv
+[0.132s] -- Up-to-date: /home/zewy/ros2_ws/install/pl25488/share/ament_index/resource_index/packages/pl25488
+[0.132s] -- Up-to-date: /home/zewy/ros2_ws/install/pl25488/share/pl25488/cmake/pl25488Config.cmake
+[0.132s] -- Up-to-date: /home/zewy/ros2_ws/install/pl25488/share/pl25488/cmake/pl25488Config-version.cmake
+[0.132s] -- Up-to-date: /home/zewy/ros2_ws/install/pl25488/share/pl25488/package.xml
+[0.132s] -- Up-to-date: /home/zewy/ros2_ws/install/pl25488/share/pl25488/launch
+[0.132s] -- Up-to-date: /home/zewy/ros2_ws/install/pl25488/share/pl25488/launch/warehouse_db.launch.py
+[0.132s] -- Up-to-date: /home/zewy/ros2_ws/install/pl25488/share/pl25488/launch/demo.launch.py
+[0.132s] -- Up-to-date: /home/zewy/ros2_ws/install/pl25488/share/pl25488/launch/setup_assistant.launch.py
+[0.132s] -- Up-to-date: /home/zewy/ros2_ws/install/pl25488/share/pl25488/launch/rsp.launch.py
+[0.132s] -- Up-to-date: /home/zewy/ros2_ws/install/pl25488/share/pl25488/launch/moveit_rviz.launch.py
+[0.133s] -- Up-to-date: /home/zewy/ros2_ws/install/pl25488/share/pl25488/launch/move_group.launch.py
+[0.133s] -- Up-to-date: /home/zewy/ros2_ws/install/pl25488/share/pl25488/launch/cpu_isolation.launch.py
+[0.133s] -- Up-to-date: /home/zewy/ros2_ws/install/pl25488/share/pl25488/launch/static_virtual_joint_tfs.launch.py
+[0.133s] -- Up-to-date: /home/zewy/ros2_ws/install/pl25488/share/pl25488/launch/spawn_controllers.launch.py
+[0.133s] -- Up-to-date: /home/zewy/ros2_ws/install/pl25488/share/pl25488/launch/test.launch.py
+[0.133s] -- Up-to-date: /home/zewy/ros2_ws/install/pl25488/share/pl25488/config
+[0.133s] -- Up-to-date: /home/zewy/ros2_ws/install/pl25488/share/pl25488/config/zeroErr1.yaml
+[0.133s] -- Up-to-date: /home/zewy/ros2_ws/install/pl25488/share/pl25488/config/move_group.yaml
+[0.133s] -- Up-to-date: /home/zewy/ros2_ws/install/pl25488/share/pl25488/config/eRobo3.srdf
+[0.133s] -- Up-to-date: /home/zewy/ros2_ws/install/pl25488/share/pl25488/config/moveit.rviz
+[0.133s] -- Up-to-date: /home/zewy/ros2_ws/install/pl25488/share/pl25488/config/zeroErr.yaml
+[0.134s] -- Installing: /home/zewy/ros2_ws/install/pl25488/share/pl25488/config/erob_arm.urdf
+[0.134s] -- Up-to-date: /home/zewy/ros2_ws/install/pl25488/share/pl25488/config/gui_bridge_params.yaml
+[0.134s] -- Up-to-date: /home/zewy/ros2_ws/install/pl25488/share/pl25488/config/eRobo3.urdf.xacro
+[0.134s] -- Up-to-date: /home/zewy/ros2_ws/install/pl25488/share/pl25488/config/kinematics.yaml
+[0.134s] -- Up-to-date: /home/zewy/ros2_ws/install/pl25488/share/pl25488/config/eRobo3.ros2_control.xacro
+[0.134s] -- Up-to-date: /home/zewy/ros2_ws/install/pl25488/share/pl25488/config/moveit_controllers.yaml
+[0.134s] -- Installing: /home/zewy/ros2_ws/install/pl25488/share/pl25488/config/joint_limits.yaml
+[0.135s] -- Up-to-date: /home/zewy/ros2_ws/install/pl25488/share/pl25488/config/ros2_controllers.yaml
+[0.135s] -- Up-to-date: /home/zewy/ros2_ws/install/pl25488/share/pl25488/config/pilz_cartesian_limits.yaml
+[0.135s] -- Up-to-date: /home/zewy/ros2_ws/install/pl25488/share/pl25488/config/initial_positions.yaml
+[0.135s] -- Up-to-date: /home/zewy/ros2_ws/install/pl25488/share/pl25488/.setup_assistant
+[0.136s] Invoked command in '/home/zewy/ros2_ws/build/pl25488' returned '0': AMENT_PREFIX_PATH=/home/zewy/ros2_ws/install/erob_arm:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zewy/ws_moveit2/install/moveit_configs_utils:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/zewy/ros2_ws/install/erob_arm/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/zewy/ros2_ws/build/pl25488

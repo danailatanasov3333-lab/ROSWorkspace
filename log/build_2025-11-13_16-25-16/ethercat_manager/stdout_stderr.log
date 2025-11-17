@@ -1,0 +1,77 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.8.4 (/opt/ros/rolling/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found rclcpp: 30.1.1 (/opt/ros/rolling/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 5.1.0 (/opt/ros/rolling/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 5.1.0 (/opt/ros/rolling/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.9.0 (/opt/ros/rolling/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 9.4.3 (/opt/ros/rolling/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found ethercat_msgs: 1.2.0 (/home/zewy/ros2_ws/install/ethercat_msgs/share/ethercat_msgs/cmake)
+[0mCMake Deprecation Warning at /opt/ros/rolling/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):
+  ament_target_dependencies() is deprecated.  Use target_link_libraries()
+  with modern CMake targets instead.  Try replacing this call with:
+
+    target_link_libraries(ethercat_sdo_srv_server PUBLIC
+      ${ethercat_msgs_TARGETS}
+      rclcpp::rclcpp
+    )
+
+Call Stack (most recent call first):
+  CMakeLists.txt:29 (ament_target_dependencies)
+
+[0m
+-- Found ament_lint_auto: 0.20.2 (/opt/ros/rolling/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/zewy/ros2_ws/src/ethercat_driver_ros2/ethercat_driver_ros2/ethercat_manager/include
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (2.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/zewy/ros2_ws/build/ethercat_manager
+[ 50%] [32mBuilding CXX object CMakeFiles/ethercat_sdo_srv_server.dir/src/ethercat_sdo_srv_server.cpp.o[0m
+[100%] [32m[1mLinking CXX executable ethercat_sdo_srv_server[0m
+[100%] Built target ethercat_sdo_srv_server
+-- Install configuration: ""
+-- Installing: /home/zewy/ros2_ws/install/ethercat_manager/lib/ethercat_manager/ethercat_sdo_srv_server
+-- Set non-toolchain portion of runtime path of "/home/zewy/ros2_ws/install/ethercat_manager/lib/ethercat_manager/ethercat_sdo_srv_server" to "/usr/local/etherlab/lib:/opt/ros/rolling/lib:/home/zewy/ros2_ws/install/ethercat_msgs/lib"
+-- Installing: /home/zewy/ros2_ws/install/ethercat_manager/share/ethercat_manager/environment/library_path.sh
+-- Installing: /home/zewy/ros2_ws/install/ethercat_manager/share/ethercat_manager/environment/library_path.dsv
+-- Installing: /home/zewy/ros2_ws/install/ethercat_manager/share/ament_index/resource_index/package_run_dependencies/ethercat_manager
+-- Installing: /home/zewy/ros2_ws/install/ethercat_manager/share/ament_index/resource_index/parent_prefix_path/ethercat_manager
+-- Installing: /home/zewy/ros2_ws/install/ethercat_manager/share/ethercat_manager/environment/ament_prefix_path.sh
+-- Installing: /home/zewy/ros2_ws/install/ethercat_manager/share/ethercat_manager/environment/ament_prefix_path.dsv
+-- Installing: /home/zewy/ros2_ws/install/ethercat_manager/share/ethercat_manager/environment/path.sh
+-- Installing: /home/zewy/ros2_ws/install/ethercat_manager/share/ethercat_manager/environment/path.dsv
+-- Installing: /home/zewy/ros2_ws/install/ethercat_manager/share/ethercat_manager/local_setup.bash
+-- Installing: /home/zewy/ros2_ws/install/ethercat_manager/share/ethercat_manager/local_setup.sh
+-- Installing: /home/zewy/ros2_ws/install/ethercat_manager/share/ethercat_manager/local_setup.zsh
+-- Installing: /home/zewy/ros2_ws/install/ethercat_manager/share/ethercat_manager/local_setup.dsv
+-- Installing: /home/zewy/ros2_ws/install/ethercat_manager/share/ethercat_manager/package.dsv
+-- Installing: /home/zewy/ros2_ws/install/ethercat_manager/share/ament_index/resource_index/packages/ethercat_manager
+-- Installing: /home/zewy/ros2_ws/install/ethercat_manager/share/ethercat_manager/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/zewy/ros2_ws/install/ethercat_manager/share/ethercat_manager/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/zewy/ros2_ws/install/ethercat_manager/share/ethercat_manager/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/zewy/ros2_ws/install/ethercat_manager/share/ethercat_manager/cmake/ethercat_managerConfig.cmake
+-- Installing: /home/zewy/ros2_ws/install/ethercat_manager/share/ethercat_manager/cmake/ethercat_managerConfig-version.cmake
+-- Installing: /home/zewy/ros2_ws/install/ethercat_manager/share/ethercat_manager/package.xml

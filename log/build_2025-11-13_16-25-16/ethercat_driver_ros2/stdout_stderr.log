@@ -1,0 +1,21 @@
+-- Found ament_cmake: 2.8.4 (/opt/ros/rolling/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Configuring done (0.7s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/zewy/ros2_ws/build/ethercat_driver_ros2
+-- Install configuration: ""
+-- Installing: /home/zewy/ros2_ws/install/ethercat_driver_ros2/share/ament_index/resource_index/package_run_dependencies/ethercat_driver_ros2
+-- Installing: /home/zewy/ros2_ws/install/ethercat_driver_ros2/share/ament_index/resource_index/parent_prefix_path/ethercat_driver_ros2
+-- Installing: /home/zewy/ros2_ws/install/ethercat_driver_ros2/share/ethercat_driver_ros2/environment/ament_prefix_path.sh
+-- Installing: /home/zewy/ros2_ws/install/ethercat_driver_ros2/share/ethercat_driver_ros2/environment/ament_prefix_path.dsv
+-- Installing: /home/zewy/ros2_ws/install/ethercat_driver_ros2/share/ethercat_driver_ros2/environment/path.sh
+-- Installing: /home/zewy/ros2_ws/install/ethercat_driver_ros2/share/ethercat_driver_ros2/environment/path.dsv
+-- Installing: /home/zewy/ros2_ws/install/ethercat_driver_ros2/share/ethercat_driver_ros2/local_setup.bash
+-- Installing: /home/zewy/ros2_ws/install/ethercat_driver_ros2/share/ethercat_driver_ros2/local_setup.sh
+-- Installing: /home/zewy/ros2_ws/install/ethercat_driver_ros2/share/ethercat_driver_ros2/local_setup.zsh
+-- Installing: /home/zewy/ros2_ws/install/ethercat_driver_ros2/share/ethercat_driver_ros2/local_setup.dsv
+-- Installing: /home/zewy/ros2_ws/install/ethercat_driver_ros2/share/ethercat_driver_ros2/package.dsv
+-- Installing: /home/zewy/ros2_ws/install/ethercat_driver_ros2/share/ament_index/resource_index/packages/ethercat_driver_ros2
+-- Installing: /home/zewy/ros2_ws/install/ethercat_driver_ros2/share/ethercat_driver_ros2/cmake/ethercat_driver_ros2Config.cmake
+-- Installing: /home/zewy/ros2_ws/install/ethercat_driver_ros2/share/ethercat_driver_ros2/cmake/ethercat_driver_ros2Config-version.cmake
+-- Installing: /home/zewy/ros2_ws/install/ethercat_driver_ros2/share/ethercat_driver_ros2/package.xml

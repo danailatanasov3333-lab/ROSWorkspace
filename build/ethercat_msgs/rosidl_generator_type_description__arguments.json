@@ -1,0 +1,12 @@
+{
+  "package_name": "ethercat_msgs",
+  "output_dir": "/home/zewy/ros2_ws/build/ethercat_msgs/rosidl_generator_type_description/ethercat_msgs",
+  "idl_tuples": [
+    "/home/zewy/ros2_ws/build/ethercat_msgs/rosidl_adapter/ethercat_msgs:srv/SetSdo.idl",
+    "/home/zewy/ros2_ws/build/ethercat_msgs/rosidl_adapter/ethercat_msgs:srv/GetSdo.idl"
+  ],
+  "include_paths": [
+    "service_msgs:/opt/ros/rolling/share/service_msgs/",
+    "builtin_interfaces:/opt/ros/rolling/share/builtin_interfaces/"
+  ]
+}

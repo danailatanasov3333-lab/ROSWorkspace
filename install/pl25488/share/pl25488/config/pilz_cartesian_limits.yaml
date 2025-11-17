@@ -1,0 +1,15 @@
+# Limits for the Pilz planner - OPTIMIZED for ultra-smooth, jerk-free movements
+# at high speeds (0.8 velocity, 0.6-0.7 acceleration)
+#
+# Key principles:
+# 1. Lower max acceleration = smoother trajectory with fewer waypoints
+# 2. S-curve acceleration (via jerk limits in joint_limits.yaml) handles smoothness
+# 3. Higher velocity limits allow scaling to work properly
+# 4. Symmetric acc/dec prevents discontinuities
+cartesian_limits:
+  max_trans_vel: 2.5      # INCREASED: Allow high velocity scaling (2.5 m/s = ~150 cm/s at tool)
+  max_trans_acc: 0.6      # OPTIMIZED: Reduced from 0.75 for smoother profiles (0.6 m/s²)
+  max_trans_dec: -0.6     # SYMMETRIC: Match acceleration for smooth transitions
+  max_rot_vel: 2.5        # INCREASED: Allow high rotational velocity (2.5 rad/s = ~143 deg/s)
+  max_rot_acc: 0.6        # OPTIMIZED: Reduced for smoother rotational motion (0.6 rad/s²)
+  max_rot_dec: -0.6       # SYMMETRIC: Match rotational acceleration

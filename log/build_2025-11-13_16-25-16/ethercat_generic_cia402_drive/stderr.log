@@ -1,0 +1,38 @@
+[0mCMake Deprecation Warning at /opt/ros/rolling/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):
+  ament_target_dependencies() is deprecated.  Use target_link_libraries()
+  with modern CMake targets instead.  Try replacing this call with:
+
+    target_link_libraries(ethercat_generic_cia402_drive PUBLIC
+      ethercat_generic_slave::ethercat_generic_slave
+      pluginlib::pluginlib
+    )
+
+Call Stack (most recent call first):
+  CMakeLists.txt:22 (ament_target_dependencies)
+
+[0m
+[0mCMake Deprecation Warning at /opt/ros/rolling/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):
+  ament_target_dependencies() is deprecated.  Use target_link_libraries()
+  with modern CMake targets instead.  Try replacing this call with:
+
+    target_link_libraries(test_load_generic_plugins PUBLIC
+      pluginlib::pluginlib
+    )
+
+Call Stack (most recent call first):
+  CMakeLists.txt:58 (ament_target_dependencies)
+
+[0m
+[0mCMake Deprecation Warning at /opt/ros/rolling/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):
+  ament_target_dependencies() is deprecated.  Use target_link_libraries()
+  with modern CMake targets instead.  Try replacing this call with:
+
+    target_link_libraries(test_generic_ec_cia402_drive PUBLIC
+      ethercat_generic_slave::ethercat_generic_slave
+      pluginlib::pluginlib
+    )
+
+Call Stack (most recent call first):
+  CMakeLists.txt:72 (ament_target_dependencies)
+
+[0m

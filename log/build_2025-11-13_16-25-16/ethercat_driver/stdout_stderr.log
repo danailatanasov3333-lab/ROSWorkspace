@@ -1,0 +1,91 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.8.4 (/opt/ros/rolling/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found hardware_interface: 5.7.0 (/opt/ros/rolling/share/hardware_interface/cmake)
+-- Found rosidl_generator_c: 5.1.0 (/opt/ros/rolling/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 5.1.0 (/opt/ros/rolling/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.9.0 (/opt/ros/rolling/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 9.4.3 (/opt/ros/rolling/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found ethercat_interface: 1.2.0 (/home/zewy/ros2_ws/install/ethercat_interface/share/ethercat_interface/cmake)
+[0mCMake Deprecation Warning at /opt/ros/rolling/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:87 (message):
+  ament_target_dependencies() is deprecated.  Use target_link_libraries()
+  with modern CMake targets instead.  Try replacing this call with:
+
+    target_link_libraries(ethercat_driver PUBLIC
+      hardware_interface::hardware_interface
+      hardware_interface::mock_components
+      pluginlib::pluginlib
+      rclcpp::rclcpp
+      rclcpp_lifecycle::rclcpp_lifecycle
+    )
+
+Call Stack (most recent call first):
+  CMakeLists.txt:27 (ament_target_dependencies)
+
+[0m
+-- Found ament_cmake_gtest: 2.8.4 (/opt/ros/rolling/share/ament_cmake_gtest/cmake)
+-- Configuring done (3.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/zewy/ros2_ws/build/ethercat_driver
+[ 50%] [32mBuilding CXX object CMakeFiles/ethercat_driver.dir/src/ethercat_driver.cpp.o[0m
+In file included from [01m[K/home/zewy/ros2_ws/src/ethercat_driver_ros2/ethercat_driver_ros2/ethercat_driver/include/ethercat_driver/ethercat_driver.hpp:32[m[K,
+                 from [01m[K/home/zewy/ros2_ws/src/ethercat_driver_ros2/ethercat_driver_ros2/ethercat_driver/src/ethercat_driver.cpp:15[m[K:
+[01m[K/home/zewy/ros2_ws/install/ethercat_interface/include/ethercat_interface/ec_master.hpp:160:46:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kec_slave_config_state_t::operational[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+  160 |     ec_slave_config_state_t config_state = {0[01;35m[K}[m[K;
+      |                                              [01;35m[K^[m[K
+[01m[K/home/zewy/ros2_ws/install/ethercat_interface/include/ethercat_interface/ec_master.hpp:160:46:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kec_slave_config_state_t::al_state[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/zewy/ros2_ws/src/ethercat_driver_ros2/ethercat_driver_ros2/ethercat_driver/src/ethercat_driver.cpp:[m[K In member function ‘[01m[Kvirtual CallbackReturn ethercat_driver::EthercatDriver::[01;32m[Kon_init[m[K(const hardware_interface::HardwareInfo&)[m[K’:
+[01m[K/home/zewy/ros2_ws/src/ethercat_driver_ros2/ethercat_driver_ros2/ethercat_driver/src/ethercat_driver.cpp:31:51:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvirtual rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn hardware_interface::HardwareComponentInterface::[01;32m[Kon_init[m[K(const hardware_interface::HardwareInfo&)[m[K’ is deprecated: Use on_init(const HardwareComponentInterfaceParams & params) instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   31 |   if ([01;35m[Khardware_interface::SystemInterface::on_init(info)[m[K != CallbackReturn::SUCCESS) {
+      |       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+In file included from [01m[K/opt/ros/rolling/include/hardware_interface/hardware_interface/system_interface.hpp:18[m[K,
+                 from [01m[K/home/zewy/ros2_ws/src/ethercat_driver_ros2/ethercat_driver_ros2/ethercat_driver/include/ethercat_driver/ethercat_driver.hpp:25[m[K:
+[01m[K/opt/ros/rolling/include/hardware_interface/hardware_interface/hardware_component_interface.hpp:345:3:[m[K [01;36m[Knote: [m[Kdeclared here
+  345 |   [01;36m[Kon_init[m[K(const HardwareInfo & hardware_info)
+      |   [01;36m[K^~~~~~~[m[K
+[100%] [32m[1mLinking CXX shared library libethercat_driver.so[0m
+[100%] Built target ethercat_driver
+-- Install configuration: ""
+-- Installing: /home/zewy/ros2_ws/install/ethercat_driver/share/ethercat_driver/ethercat_driver_plugin.xml
+-- Installing: /home/zewy/ros2_ws/install/ethercat_driver/lib/libethercat_driver.so
+-- Set non-toolchain portion of runtime path of "/home/zewy/ros2_ws/install/ethercat_driver/lib/libethercat_driver.so" to ""
+-- Installing: /home/zewy/ros2_ws/install/ethercat_driver/include
+-- Installing: /home/zewy/ros2_ws/install/ethercat_driver/include/ethercat_driver
+-- Installing: /home/zewy/ros2_ws/install/ethercat_driver/include/ethercat_driver/visibility_control.h
+-- Installing: /home/zewy/ros2_ws/install/ethercat_driver/include/ethercat_driver/ethercat_driver.hpp
+-- Installing: /home/zewy/ros2_ws/install/ethercat_driver/share/ethercat_driver/environment/library_path.sh
+-- Installing: /home/zewy/ros2_ws/install/ethercat_driver/share/ethercat_driver/environment/library_path.dsv
+-- Installing: /home/zewy/ros2_ws/install/ethercat_driver/share/ament_index/resource_index/package_run_dependencies/ethercat_driver
+-- Installing: /home/zewy/ros2_ws/install/ethercat_driver/share/ament_index/resource_index/parent_prefix_path/ethercat_driver
+-- Installing: /home/zewy/ros2_ws/install/ethercat_driver/share/ethercat_driver/environment/ament_prefix_path.sh
+-- Installing: /home/zewy/ros2_ws/install/ethercat_driver/share/ethercat_driver/environment/ament_prefix_path.dsv
+-- Installing: /home/zewy/ros2_ws/install/ethercat_driver/share/ethercat_driver/environment/path.sh
+-- Installing: /home/zewy/ros2_ws/install/ethercat_driver/share/ethercat_driver/environment/path.dsv
+-- Installing: /home/zewy/ros2_ws/install/ethercat_driver/share/ethercat_driver/local_setup.bash
+-- Installing: /home/zewy/ros2_ws/install/ethercat_driver/share/ethercat_driver/local_setup.sh
+-- Installing: /home/zewy/ros2_ws/install/ethercat_driver/share/ethercat_driver/local_setup.zsh
+-- Installing: /home/zewy/ros2_ws/install/ethercat_driver/share/ethercat_driver/local_setup.dsv
+-- Installing: /home/zewy/ros2_ws/install/ethercat_driver/share/ethercat_driver/package.dsv
+-- Installing: /home/zewy/ros2_ws/install/ethercat_driver/share/ament_index/resource_index/packages/ethercat_driver
+-- Installing: /home/zewy/ros2_ws/install/ethercat_driver/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/ethercat_driver
+-- Installing: /home/zewy/ros2_ws/install/ethercat_driver/share/ethercat_driver/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/zewy/ros2_ws/install/ethercat_driver/share/ethercat_driver/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/zewy/ros2_ws/install/ethercat_driver/share/ethercat_driver/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/zewy/ros2_ws/install/ethercat_driver/share/ethercat_driver/cmake/ethercat_driverConfig.cmake
+-- Installing: /home/zewy/ros2_ws/install/ethercat_driver/share/ethercat_driver/cmake/ethercat_driverConfig-version.cmake
+-- Installing: /home/zewy/ros2_ws/install/ethercat_driver/share/ethercat_driver/package.xml

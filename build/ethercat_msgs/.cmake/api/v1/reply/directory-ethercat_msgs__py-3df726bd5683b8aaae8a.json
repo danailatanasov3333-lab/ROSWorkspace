@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "ethercat_msgs__py",
+		"source" : "/home/zewy/ros2_ws/build/ethercat_msgs/ethercat_msgs__py"
+	}
+}

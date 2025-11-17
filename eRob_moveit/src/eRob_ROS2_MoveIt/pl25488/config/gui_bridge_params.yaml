@@ -1,0 +1,49 @@
+# GUI Bridge Configuration
+# All parameters for controlling robot motion behavior
+
+gui_bridge:
+  ros__parameters:
+    # Robot Configuration
+    planning_group: "manipulator"
+    end_effector_link: "tool0"
+    base_frame: "base_link"
+    joint_names: ["Joint_1", "Joint_2", "Joint_3", "Joint_4", "Joint_5", "Joint_6"]
+
+    # Motion Speed & Smoothness (0.0-1.0)
+    # With increased joint limits (50-80 rad/s), we can safely use 60% scaling
+    # This provides FAST movements while staying within limits
+    velocity_scaling: 0.5  # 60% - Fast and smooth
+    acceleration_scaling: 0.5  # 60% - Quick acceleration without jerking
+
+    # Planning Configuration
+    planning_time: 5.0  # Seconds to find path - prevents rushed planning
+    planning_attempts: 10  # Max retry attempts for difficult paths
+
+    # Cartesian Path Parameters
+    cartesian_step_size: 0.05  # Interpolation step (meters) - 50mm for smoother, faster motion
+    cartesian_jump_threshold: 0.0  # Disabled for fixed orientation
+    cartesian_min_fraction: 0.25  # Require 25% of path achievable (very permissive - allows partial movements)
+
+    # Start State Tolerance - IMPORTANT for avoiding false limit errors
+    # Increased significantly to handle hardware state updates
+    start_state_tolerance: 0.1  # 0.1 radian tolerance (was 0.01)
+
+    # NOTE: We no longer cache joint states in gui_bridge
+    # MoveIt's planning scene monitor provides real-time current state
+    # This prevents stale state issues that caused false limit errors
+
+# PRESETS:
+#
+# PRECISION (Slow & Accurate):
+#   velocity_scaling: 0.15, cartesian_step_size: 0.005
+#
+# BALANCED (Default):
+#   velocity_scaling: 0.3, cartesian_step_size: 0.01
+#
+# FAST:
+#   velocity_scaling: 0.6, cartesian_step_size: 0.02
+#
+# TROUBLESHOOTING:
+#   Jerky motion → Lower velocity/acceleration_scaling
+#   False limit errors → Increase start_state_tolerance to 0.05
+#   Paths failing → Lower cartesian_min_fraction to 0.90

@@ -1,0 +1,66 @@
+# MoveIt Move Group Configuration
+# Controls planning scene monitoring and publishing
+# NOTE: Use flat parameter structure, not nested
+
+move_group:
+  ros__parameters:
+    # Planning Scene Monitor - core functionality
+    planning_scene_monitor.name: "planning_scene_monitor"
+    planning_scene_monitor.robot_description: "robot_description"
+    planning_scene_monitor.joint_state_topic: "/joint_states"
+    planning_scene_monitor.attached_collision_object_topic: "/attached_collision_object"
+    planning_scene_monitor.publish_planning_scene: true
+    planning_scene_monitor.publish_geometry_updates: true
+    planning_scene_monitor.publish_state_updates: true
+    planning_scene_monitor.publish_transforms_updates: true
+    planning_scene_monitor.publish_robot_description: true
+    planning_scene_monitor.publish_robot_description_semantic: true
+    planning_scene_monitor.publish_planning_scene_hz: 10.0
+
+    # Trajectory execution settings
+    trajectory_execution.allowed_execution_duration_scaling: 1.5
+    trajectory_execution.allowed_goal_duration_margin: 0.5
+    trajectory_execution.allowed_start_tolerance: 0.1  # Increased to prevent false state deviation errors
+
+
+    # Planning Pipeline Configuration
+    planning_pipelines: ["pilz_industrial_motion_planner", "ompl", "chomp", "stomp"]
+    default_planning_pipeline: "pilz_industrial_motion_planner"
+    # Pilz planner configuration
+    pilz_industrial_motion_planner:
+      planning_plugin: "pilz_industrial_motion_planner/CommandPlanner"
+      request_adapters: >-
+        default_planning_request_adapters/ResolveConstraintFrames
+        default_planning_request_adapters/ValidateWorkspaceBounds
+        default_planning_request_adapters/CheckStartStateBounds
+        default_planning_request_adapters/CheckStartStateCollision
+      response_adapters: >-
+        default_planning_response_adapters/ValidateSolution
+        default_planning_response_adapters/DisplayMotionPath
+      default_planner_config: "LIN"
+    # Keep OMPL as fallback
+    ompl:
+      planning_plugin: "ompl_interface/OMPLPlanner"
+      request_adapters: >-
+        default_planning_request_adapters/ResolveConstraintFrames
+        default_planning_request_adapters/ValidateWorkspaceBounds
+        default_planning_request_adapters/CheckStartStateBounds
+        default_planning_request_adapters/CheckStartStateCollision
+      response_adapters: >-
+        default_planning_response_adapters/AddTimeOptimalParameterization
+        default_planning_response_adapters/ValidateSolution
+        default_planning_response_adapters/DisplayMotionPath
+      default_planner_config: "RRTConnect"
+    # Trajectory Execution - smoother movements
+    trajectory_execution.execution_duration_monitoring: true
+    trajectory_execution.allowed_execution_duration_scaling: 1.2
+    trajectory_execution.allowed_goal_duration_margin: 0.5
+    # Time parameterization - better acceleration profiles
+    request_adapters: >-
+      default_planning_request_adapters/ResolveConstraintFrames
+      default_planning_request_adapters/ValidateWorkspaceBounds
+      default_planning_request_adapters/CheckStartStateBounds
+      default_planning_request_adapters/CheckStartStateCollision
+    response_adapters: >-
+      default_planning_response_adapters/AddTimeOptimalParameterization
+      default_planning_response_adapters/ValidateSolution

@@ -1,0 +1,48 @@
+{
+  "package_name": "ethercat_msgs",
+  "output_dir": "/home/zewy/ros2_ws/build/ethercat_msgs/rosidl_generator_c/ethercat_msgs",
+  "template_dir": "/opt/ros/rolling/share/rosidl_generator_c/cmake/../resource",
+  "idl_tuples": [
+    "/home/zewy/ros2_ws/build/ethercat_msgs/rosidl_adapter/ethercat_msgs:srv/SetSdo.idl",
+    "/home/zewy/ros2_ws/build/ethercat_msgs/rosidl_adapter/ethercat_msgs:srv/GetSdo.idl"
+  ],
+  "ros_interface_files": [
+    "/home/zewy/ros2_ws/src/ethercat_driver_ros2/ethercat_driver_ros2/ethercat_msgs/srv/SetSdo.srv",
+    "/home/zewy/ros2_ws/src/ethercat_driver_ros2/ethercat_driver_ros2/ethercat_msgs/srv/GetSdo.srv"
+  ],
+  "ros_interface_dependencies": [
+    "service_msgs:/opt/ros/rolling/share/service_msgs/msg/ServiceEventInfo.idl",
+    "builtin_interfaces:/opt/ros/rolling/share/builtin_interfaces/msg/Duration.idl",
+    "builtin_interfaces:/opt/ros/rolling/share/builtin_interfaces/msg/Time.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/rolling/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c",
+    "/opt/ros/rolling/share/rosidl_generator_c/cmake/../../../lib/python3.12/site-packages/rosidl_generator_c/__init__.py",
+    "/opt/ros/rolling/share/rosidl_generator_c/cmake/../resource/action__type_support.h.em",
+    "/opt/ros/rolling/share/rosidl_generator_c/cmake/../resource/action__type_support.c.em",
+    "/opt/ros/rolling/share/rosidl_generator_c/cmake/../resource/empty__description.c.em",
+    "/opt/ros/rolling/share/rosidl_generator_c/cmake/../resource/full__description.c.em",
+    "/opt/ros/rolling/share/rosidl_generator_c/cmake/../resource/idl.h.em",
+    "/opt/ros/rolling/share/rosidl_generator_c/cmake/../resource/idl__description.c.em",
+    "/opt/ros/rolling/share/rosidl_generator_c/cmake/../resource/idl__functions.c.em",
+    "/opt/ros/rolling/share/rosidl_generator_c/cmake/../resource/idl__functions.h.em",
+    "/opt/ros/rolling/share/rosidl_generator_c/cmake/../resource/idl__struct.h.em",
+    "/opt/ros/rolling/share/rosidl_generator_c/cmake/../resource/idl__type_support.c.em",
+    "/opt/ros/rolling/share/rosidl_generator_c/cmake/../resource/idl__type_support.h.em",
+    "/opt/ros/rolling/share/rosidl_generator_c/cmake/../resource/msg__functions.c.em",
+    "/opt/ros/rolling/share/rosidl_generator_c/cmake/../resource/msg__functions.h.em",
+    "/opt/ros/rolling/share/rosidl_generator_c/cmake/../resource/msg__struct.h.em",
+    "/opt/ros/rolling/share/rosidl_generator_c/cmake/../resource/msg__type_support.h.em",
+    "/opt/ros/rolling/share/rosidl_generator_c/cmake/../resource/srv__type_support.c.em",
+    "/opt/ros/rolling/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
+    "/home/zewy/ros2_ws/build/ethercat_msgs/rosidl_adapter/ethercat_msgs/srv/SetSdo.idl",
+    "/home/zewy/ros2_ws/build/ethercat_msgs/rosidl_adapter/ethercat_msgs/srv/GetSdo.idl",
+    "/opt/ros/rolling/share/service_msgs/msg/ServiceEventInfo.idl",
+    "/opt/ros/rolling/share/builtin_interfaces/msg/Duration.idl",
+    "/opt/ros/rolling/share/builtin_interfaces/msg/Time.idl"
+  ],
+  "type_description_tuples": [
+    "srv/SetSdo.idl:/home/zewy/ros2_ws/build/ethercat_msgs/rosidl_generator_type_description/ethercat_msgs/srv/SetSdo.json",
+    "srv/GetSdo.idl:/home/zewy/ros2_ws/build/ethercat_msgs/rosidl_generator_type_description/ethercat_msgs/srv/GetSdo.json"
+  ]
+}

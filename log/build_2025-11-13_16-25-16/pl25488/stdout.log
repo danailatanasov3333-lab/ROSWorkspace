@@ -1,0 +1,69 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.8.4 (/opt/ros/rolling/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found rclpy: 10.0.0 (/opt/ros/rolling/share/rclpy/cmake)
+-- Found moveit_msgs: 2.7.1 (/home/zewy/ws_moveit2/install/moveit_msgs/share/moveit_msgs/cmake)
+-- Found rosidl_generator_c: 5.1.0 (/opt/ros/rolling/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 5.1.0 (/opt/ros/rolling/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Configuring done (2.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/zewy/ros2_ws/build/pl25488
+-- Install configuration: ""
+-- Installing: /home/zewy/ros2_ws/install/pl25488/lib/pl25488/gui_bridge.py
+-- Installing: /home/zewy/ros2_ws/install/pl25488/lib/pl25488/cartesian_gui.py
+-- Installing: /home/zewy/ros2_ws/install/pl25488/share/ament_index/resource_index/package_run_dependencies/pl25488
+-- Installing: /home/zewy/ros2_ws/install/pl25488/share/ament_index/resource_index/parent_prefix_path/pl25488
+-- Installing: /home/zewy/ros2_ws/install/pl25488/share/pl25488/environment/ament_prefix_path.sh
+-- Installing: /home/zewy/ros2_ws/install/pl25488/share/pl25488/environment/ament_prefix_path.dsv
+-- Installing: /home/zewy/ros2_ws/install/pl25488/share/pl25488/environment/path.sh
+-- Installing: /home/zewy/ros2_ws/install/pl25488/share/pl25488/environment/path.dsv
+-- Installing: /home/zewy/ros2_ws/install/pl25488/share/pl25488/local_setup.bash
+-- Installing: /home/zewy/ros2_ws/install/pl25488/share/pl25488/local_setup.sh
+-- Installing: /home/zewy/ros2_ws/install/pl25488/share/pl25488/local_setup.zsh
+-- Installing: /home/zewy/ros2_ws/install/pl25488/share/pl25488/local_setup.dsv
+-- Installing: /home/zewy/ros2_ws/install/pl25488/share/pl25488/package.dsv
+-- Installing: /home/zewy/ros2_ws/install/pl25488/share/ament_index/resource_index/packages/pl25488
+-- Installing: /home/zewy/ros2_ws/install/pl25488/share/pl25488/cmake/pl25488Config.cmake
+-- Installing: /home/zewy/ros2_ws/install/pl25488/share/pl25488/cmake/pl25488Config-version.cmake
+-- Installing: /home/zewy/ros2_ws/install/pl25488/share/pl25488/package.xml
+-- Installing: /home/zewy/ros2_ws/install/pl25488/share/pl25488/launch
+-- Installing: /home/zewy/ros2_ws/install/pl25488/share/pl25488/launch/warehouse_db.launch.py
+-- Installing: /home/zewy/ros2_ws/install/pl25488/share/pl25488/launch/demo.launch.py
+-- Installing: /home/zewy/ros2_ws/install/pl25488/share/pl25488/launch/setup_assistant.launch.py
+-- Installing: /home/zewy/ros2_ws/install/pl25488/share/pl25488/launch/rsp.launch.py
+-- Installing: /home/zewy/ros2_ws/install/pl25488/share/pl25488/launch/moveit_rviz.launch.py
+-- Installing: /home/zewy/ros2_ws/install/pl25488/share/pl25488/launch/move_group.launch.py
+-- Installing: /home/zewy/ros2_ws/install/pl25488/share/pl25488/launch/cpu_isolation.launch.py
+-- Installing: /home/zewy/ros2_ws/install/pl25488/share/pl25488/launch/static_virtual_joint_tfs.launch.py
+-- Installing: /home/zewy/ros2_ws/install/pl25488/share/pl25488/launch/spawn_controllers.launch.py
+-- Installing: /home/zewy/ros2_ws/install/pl25488/share/pl25488/launch/test.launch.py
+-- Installing: /home/zewy/ros2_ws/install/pl25488/share/pl25488/config
+-- Installing: /home/zewy/ros2_ws/install/pl25488/share/pl25488/config/zeroErr1.yaml
+-- Installing: /home/zewy/ros2_ws/install/pl25488/share/pl25488/config/move_group.yaml
+-- Installing: /home/zewy/ros2_ws/install/pl25488/share/pl25488/config/eRobo3.srdf
+-- Installing: /home/zewy/ros2_ws/install/pl25488/share/pl25488/config/moveit.rviz
+-- Installing: /home/zewy/ros2_ws/install/pl25488/share/pl25488/config/zeroErr.yaml
+-- Installing: /home/zewy/ros2_ws/install/pl25488/share/pl25488/config/erob_arm.urdf
+-- Installing: /home/zewy/ros2_ws/install/pl25488/share/pl25488/config/gui_bridge_params.yaml
+-- Installing: /home/zewy/ros2_ws/install/pl25488/share/pl25488/config/eRobo3.urdf.xacro
+-- Installing: /home/zewy/ros2_ws/install/pl25488/share/pl25488/config/kinematics.yaml
+-- Installing: /home/zewy/ros2_ws/install/pl25488/share/pl25488/config/eRobo3.ros2_control.xacro
+-- Installing: /home/zewy/ros2_ws/install/pl25488/share/pl25488/config/moveit_controllers.yaml
+-- Installing: /home/zewy/ros2_ws/install/pl25488/share/pl25488/config/joint_limits.yaml
+-- Installing: /home/zewy/ros2_ws/install/pl25488/share/pl25488/config/ros2_controllers.yaml
+-- Installing: /home/zewy/ros2_ws/install/pl25488/share/pl25488/config/pilz_cartesian_limits.yaml
+-- Installing: /home/zewy/ros2_ws/install/pl25488/share/pl25488/config/initial_positions.yaml
+-- Installing: /home/zewy/ros2_ws/install/pl25488/share/pl25488/.setup_assistant

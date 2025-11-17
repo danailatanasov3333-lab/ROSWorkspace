@@ -1,0 +1,84 @@
+# joint_limits.yaml - OPTIMIZED for ultra-smooth motion at 0.8 vel, 0.6-0.7 acc
+#
+# Key optimizations:
+# 1. Moderate acceleration limits for smooth trajectory generation
+# 2. S-curve jerk limits (max_jerk) ensure smooth acceleration transitions
+# 3. Higher velocity limits allow proper scaling without saturation
+# 4. Symmetric acceleration/deceleration prevents discontinuities
+
+# Default scaling factors - OPTIMIZED for high-speed smooth operation
+default_velocity_scaling_factor: 0.6   # Allow higher speeds
+default_acceleration_scaling_factor: 0.4  # Moderate for smoothness
+
+# CRITICAL NOTES:
+# - Jerk limits enable S-curve acceleration (smooth ramp-up/down)
+# - Lower max_jerk = smoother but slower transitions
+# - Higher max_velocity allows scaling to work without saturation
+# - Position limits enabled to prevent collisions and invalid configurations
+joint_limits:
+  Joint_1:
+    has_position_limits: true  # ENABLED - use URDF limits
+    has_velocity_limits: true
+    max_velocity: 40.0  # INCREASED: Allow high-speed motion without saturation
+    has_acceleration_limits: true
+    max_acceleration: 12.0  # OPTIMIZED: Moderate for smooth trajectory generation
+    max_deceleration: -12.0  # SYMMETRIC: Prevents discontinuities
+    has_jerk_limits: true
+    max_jerk: 80.0  # OPTIMIZED: Reduced from 100 for smoother S-curve transitions
+    min_position: -6.28318   # -360° (URDF limit - full rotation OK for base)
+    max_position: 6.28318    # +360°
+  Joint_2:
+    has_position_limits: true  # ENABLED - full range with collision checking
+    has_velocity_limits: true
+    max_velocity: 40.0  # INCREASED for proper scaling
+    has_acceleration_limits: true
+    max_acceleration: 12.0  # OPTIMIZED for smooth motion
+    max_deceleration: -12.0  # SYMMETRIC
+    has_jerk_limits: true
+    max_jerk: 80.0  # OPTIMIZED S-curve limit
+    min_position: -3.22886   # -185° (±180° + 5° buffer)
+    max_position: 3.22886    # +185° (±180° + 5° buffer)
+  Joint_3:
+    has_position_limits: true  # ENABLED - full range with collision checking
+    has_velocity_limits: true
+    max_velocity: 40.0  # INCREASED for proper scaling
+    has_acceleration_limits: true
+    max_acceleration: 12.0  # OPTIMIZED for smooth motion
+    max_deceleration: -12.0  # SYMMETRIC
+    has_jerk_limits: true
+    max_jerk: 80.0  # OPTIMIZED S-curve limit
+    min_position: -3.22886   # -185° (±180° + 5° buffer)
+    max_position: 3.22886    # +185° (±180° + 5° buffer)
+  Joint_4:
+    has_position_limits: true  # ENABLED - prevent nonsensical flips
+    has_velocity_limits: true
+    max_velocity: 45.0  # Higher for wrist joint (lighter, faster)
+    has_acceleration_limits: true
+    max_acceleration: 15.0  # Higher acceleration OK for wrist
+    max_deceleration: -15.0  # SYMMETRIC
+    has_jerk_limits: true
+    max_jerk: 100.0  # Higher jerk OK for wrist joint
+    min_position: -6.10865   # -350° (±180° extended range)
+    max_position: 3.14159    # +180°
+  Joint_5:
+    has_position_limits: true  # ENABLED - prevent flips
+    has_velocity_limits: true
+    max_velocity: 45.0  # Higher for wrist joint
+    has_acceleration_limits: true
+    max_acceleration: 15.0  # Higher acceleration OK
+    max_deceleration: -15.0  # SYMMETRIC
+    has_jerk_limits: true
+    max_jerk: 100.0  # Higher jerk OK for wrist
+    min_position: -3.22886   # -185° (±180° + buffer)
+    max_position: 3.22886    # +185°
+  Joint_6:
+    has_position_limits: true  # ENABLED - prevent multi-turn wrapping
+    has_velocity_limits: true
+    max_velocity: 50.0  # Highest for end-effector rotation
+    has_acceleration_limits: true
+    max_acceleration: 18.0  # Highest acceleration for fast tool rotation
+    max_deceleration: -18.0  # SYMMETRIC
+    has_jerk_limits: true
+    max_jerk: 120.0  # Higher jerk OK for tool rotation
+    min_position: -12.5664   # -185° (±180° + buffer)
+    max_position: 12.5664    # +185°

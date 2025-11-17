@@ -1,0 +1,274 @@
+<robot name="eRobo3" version="1.0">
+  <joint name="Joint_1" type="revolute">
+    <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+    <parent link="base_link"/>
+    <child link="Link_1"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+    <limit effort="1000" lower="-6.28318" upper="6.28318" velocity="20.0" />
+  </joint>
+  <joint name="Joint_2" type="revolute">
+    <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.05300 0.14050"/>
+    <parent link="Link_1"/>
+    <child link="Link_2"/>
+    <axis xyz="0.00000 -1.00000 0.00000"/>
+    <limit effort="1000" lower="-3.14159" upper="3.14159" velocity="20.0" />
+  </joint>
+  <joint name="Joint_3" type="revolute">
+    <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00050 0.24350"/>
+    <parent link="Link_2"/>
+    <child link="Link_3"/>
+    <axis xyz="0.00000 -1.00000 0.00000"/>
+    <limit effort="1000" lower="-3.14159" upper="3.14159" velocity="20.0" />
+  </joint>
+  <joint name="Joint_4" type="revolute">
+    <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 -0.01400 0.21100"/>
+    <parent link="Link_3"/>
+    <child link="Link_4"/>
+    <axis xyz="0.00000 -1.00000 0.00000"/>
+    <limit effort="1000" lower="-4.88692" upper="3.14159" velocity="20.0" />
+  </joint>
+  <joint name="Joint_5" type="revolute">
+    <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.04700 0.03900"/>
+    <parent link="Link_4"/>
+    <child link="Link_5"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+    <limit effort="1000" lower="-3.14159" upper="3.14159" velocity="20.0" />
+  </joint>
+  <joint name="Joint_6" type="revolute">
+    <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.06080 0.04700"/>
+    <parent link="Link_5"/>
+    <child link="Link_6"/>
+    <axis xyz="0.00000 1.00000 0.00000"/>
+    <limit effort="1000" lower="-12.5664" upper="12.5664" velocity="20.0" />
+  </joint>
+
+
+
+  <link name="Link_1">
+    <collision name="Link_1_collision">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <geometry>
+        <mesh filename="package://erob_arm/meshes/Link_1.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <inertia ixx="0.00054" ixy="0.00000" ixz="0.00000" iyy="0.00052" iyz="0.00000" izz="0.00054"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00308 0.13617"/>
+      <mass value="0.50622"/>
+    </inertial>
+    <visual name="Link_1_visual">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <material name="#ffffffff"/>
+      <geometry>
+        <mesh filename="package://erob_arm/meshes/Link_1.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="Link_2">
+    <collision name="Link_2_collision">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <geometry>
+        <mesh filename="package://erob_arm/meshes/Link_2.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <inertia ixx="0.00157" ixy="0.00000" ixz="0.00000" iyy="0.00156" iyz="0.00000" izz="0.00119"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.04217 0.11937"/>
+      <mass value="1.16203"/>
+    </inertial>
+    <visual name="Link_2_visual">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <material name="#ffffffff"/>
+      <geometry>
+        <mesh filename="package://erob_arm/meshes/Link_2.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="Link_3">
+    <collision name="Link_3_collision">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <geometry>
+        <mesh filename="package://erob_arm/meshes/Link_3.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <inertia ixx="0.00081" ixy="0.00000" ixz="0.00000" iyy="0.00091" iyz="-0.00001" izz="0.00062"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 -0.05451 0.09532"/>
+      <mass value="0.77552"/>
+    </inertial>
+    <visual name="Link_3_visual">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <material name="#ffffffff"/>
+      <geometry>
+        <mesh filename="package://erob_arm/meshes/Link_3.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="Link_4">
+    <collision name="Link_4_collision">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <geometry>
+        <mesh filename="package://erob_arm/meshes/Link_4.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <inertia ixx="0.00025" ixy="0.00000" ixz="0.00000" iyy="0.00024" iyz="0.00000" izz="0.00026"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00001 0.04110 0.00150"/>
+      <mass value="0.31668"/>
+    </inertial>
+    <visual name="Link_4_visual">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <material name="#ffffffff"/>
+      <geometry>
+        <mesh filename="package://erob_arm/meshes/Link_4.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="Link_5">
+    <collision name="Link_5_collision">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <geometry>
+        <mesh filename="package://erob_arm/meshes/Link_5.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <inertia ixx="0.00025" ixy="0.00000" ixz="0.00000" iyy="0.00026" iyz="0.00000" izz="0.00024"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.00001 0.00150 0.04110"/>
+      <mass value="0.31668"/>
+    </inertial>
+    <visual name="Link_5_visual">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <material name="#ffffffff"/>
+      <geometry>
+        <mesh filename="package://erob_arm/meshes/Link_5.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="Link_6">
+    <collision name="Link_6_collision">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <geometry>
+        <mesh filename="package://erob_arm/meshes/Link_6.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <inertia ixx="0.00004" ixy="0.00000" ixz="0.00000" iyy="0.00007" iyz="0.00000" izz="0.00004"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 -0.00578 0.00013"/>
+      <mass value="0.10121"/>
+    </inertial>
+    <visual name="Link_6_visual">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <material name="#ffffffff"/>
+      <geometry>
+        <mesh filename="package://erob_arm/meshes/Link_6.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="base_link">
+    <!-- empty root link (no inertial element) -->
+  </link>
+
+  <!-- child link holding the physical representation and inertial properties -->
+  <link name="base_link_inertial">
+    <collision name="base_link_collision">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <geometry>
+        <mesh filename="package://erob_arm/meshes/base_link.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <inertia ixx="0.00083" ixy="0.00001" ixz="0.00001" iyy="0.00085" iyz="0.00003" izz="0.00110"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00095 -0.00172 0.03600"/>
+      <mass value="0.47602"/>
+    </inertial>
+    <visual name="base_link_visual">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <material name="base"/>
+      <geometry>
+        <mesh filename="package://erob_arm/meshes/base_link.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <!-- Fixed joint attaching the inertial child to the root -->
+  <joint name="base_link_fixed_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="base_link_inertial"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+
+
+  <material name="#ffffffff">
+    <color rgba="0.8000 0.40000 0 1.0000"/>
+  </material>
+    <material name="base">
+    <color rgba="0.40000 0.40000 0.40000 1.0000"/>
+  </material>
+    <!-- Tool0 frame -->
+  <link name="tool0">
+    <visual>
+      <!-- keep a visible marker at the tool frame (unchanged) -->
+      <origin xyz="0 0.01 0" rpy="0 0 0"/>
+      <geometry>
+        <sphere radius="0.010"/> <!-- Small sphere as marker -->
+      </geometry>
+      <material name="tool_marker">
+        <color rgba="1 0 0 1"/> <!-- Red marker -->
+      </material>
+    </visual>
+    <!-- Collision geometry for tool - extended sphere to detect table/base collisions -->
+    <collision>
+      <!-- Extended forward along Y axis (tool direction) - further to detect table at 45mm -->
+      <origin xyz="0 0.04 0" rpy="0 0 0"/>
+      <geometry>
+        <sphere radius="0.03"/> <!-- 30mm radius - ensures detection of table at 45mm height -->
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="tool0" type="fixed">
+    <parent link="Link_6"/>
+    <child link="tool0"/>
+    <!-- Move the tool origin a small amount away from Link_6 to avoid an immediate self-collision.
+         If you have the exact tool transform, use that instead. -->
+    <origin xyz="0.0 0.01 0" rpy="0.0 0.0 0.0"/>
+  </joint>
+
+  <material name="tool_marker">
+    <color rgba="1 0 0 1"/>
+  </material>
+
+  <!-- TABLE: Fixed collision object representing the work surface -->
+  <!-- This allows MoveIt to automatically avoid the table without manual Z limits -->
+  <!-- Table top at Z=0.08m (80mm above base) to provide larger safety margin -->
+  <link name="table">
+    <visual>
+      <origin xyz="0 0 0.055" rpy="0 0 0"/>
+      <geometry>
+        <box size="2.0 2.0 0.05"/> <!-- 2m x 2m x 5cm table -->
+      </geometry>
+      <material name="table_material">
+        <color rgba="0.6 0.4 0.2 0.8"/> <!-- Brown with some transparency -->
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.055" rpy="0 0 0"/>
+      <geometry>
+        <box size="2.0 2.0 0.05"/> <!-- 2m x 2m x 5cm table -->
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="table_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="table"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+  <material name="table_material">
+    <color rgba="0.6 0.4 0.2 0.8"/>
+  </material>
+
+  <!-- Ensure joint limits here match those in ros2_control.xacro and SRDF for correct planner behavior -->
+</robot>

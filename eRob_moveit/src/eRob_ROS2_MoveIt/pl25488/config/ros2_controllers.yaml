@@ -1,0 +1,50 @@
+# This config file is used by ros2_control
+controller_manager:
+  ros__parameters:
+    update_rate: 100  # Hz
+
+    manipulator_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+manipulator_controller:
+  ros__parameters:
+    joints:
+      - Joint_1
+      - Joint_2
+      - Joint_3
+      - Joint_4
+      - Joint_5
+      - Joint_6
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+
+    # Trajectory execution settings for smooth motion without jerking
+    interpolation_method: "splines"  # Use spline interpolation for smoothness
+    allow_integration_in_goal_trajectories: true
+    allow_nonzero_velocity_at_trajectory_end: false  # Stop smoothly at end
+
+    # Trajectory blending for smoother transitions between waypoints
+    allow_partial_joints_goal: false
+
+    # Reduce execution overhead
+    action_monitor_rate: 20.0  # Hz for feedback
+
+    # BALANCED: Tolerances tight enough for good tracking, loose enough to prevent stuttering
+    # The Pilz planner with moderate speeds should be able to meet these
+    constraints:
+      goal_time: 0.6  # Slightly increased from 0.5s for smoother completion
+      stopped_velocity_tolerance: 0.08  # Slightly relaxed from 0.05
+      Joint_1: {trajectory: 0.3, goal: 0.15}  # Relaxed from 0.2/0.1 for smoother motion (17°/8.6°)
+      Joint_2: {trajectory: 0.3, goal: 0.15}  # Prevents stuttering
+      Joint_3: {trajectory: 0.3, goal: 0.15}
+      Joint_4: {trajectory: 0.3, goal: 0.15}
+      Joint_5: {trajectory: 0.3, goal: 0.15}
+      Joint_6: {trajectory: 0.3, goal: 0.15}
+

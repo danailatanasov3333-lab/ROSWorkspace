@@ -1,0 +1,4 @@
+source;share/pl25488/local_setup.bash
+source;share/pl25488/local_setup.dsv
+source;share/pl25488/local_setup.sh
+source;share/pl25488/local_setup.zsh
